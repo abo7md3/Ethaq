@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/satellite_page.dart';

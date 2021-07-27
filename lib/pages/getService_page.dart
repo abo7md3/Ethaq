@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/satellite_page.dart';
@@ -46,6 +46,8 @@ class GetService extends StatelessWidget {
                   child: Text(
                     " you have got the service!!!!!",
                     style: TextStyle(
+                      height: 1.2,
+                      fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 3,

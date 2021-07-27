@@ -7,8 +7,8 @@ class Electrician extends StatelessWidget {
   List lsImgE = ["assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"
     ,"assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"];
   List lsTxtE1 = ["Abdulmajid","Yaser","Mohamed","Omare"];
-  List lsTxtE2 = ["Abdulmajid is ready to Elect","Yaser is ready to Electrician",
-    "Mohamed is ready to Electrician","Omare is ready to Electrician"];
+  List lsTxtE2 = ["Abdulmajid is ready to Elect","Yaser is ready to Elect",
+    "Mohamed is ready to Elect","Omare is ready to Elect"];
 
   @override
   Widget build(BuildContext context) {

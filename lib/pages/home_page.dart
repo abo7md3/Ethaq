@@ -1,7 +1,7 @@
-import 'package:ethaq/pages/help_page.dart';
-import 'package:ethaq/pages/more_page.dart';
-import 'package:ethaq/pages/order_page.dart';
-import 'package:ethaq/pages/services_page.dart';
+import 'package:ethaq1/pages/help_page.dart';
+import 'package:ethaq1/pages/more_page.dart';
+import 'package:ethaq1/pages/order_page.dart';
+import 'package:ethaq1/pages/services_page.dart';
 import 'package:flutter/material.dart';
 import '../widgets/post_item.dart';
 import '../pages/login_page.dart';
@@ -9,6 +9,7 @@ import '../pages/electrician_page.dart';
 import '../pages/plumber_page.dart';
 import '../pages/shipping_page.dart';
 import '../pages/satellite_page.dart';
+import '../repositories/auth_repository.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -124,17 +125,6 @@ class HomePage extends StatelessWidget {
                               "assets/images/photo5927254567735637636.jpg"),
                         ),
                         onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> Help()));},
-                      ),
-                    ),
-                    SizedBox(
-                      width: 100,
-                      height: 100,
-                      child: IconButton(
-                        icon: Image(
-                          image: AssetImage(
-                              "assets/images/photo5927254567735637637.jpg"),
-                        ),
-                        onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> More()));},
                       ),
                     ),
                     SizedBox(

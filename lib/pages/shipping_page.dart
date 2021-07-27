@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/shipping_page.dart';
@@ -9,8 +9,8 @@ class Shipping extends StatelessWidget {
   List lsImg = ["assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"
     ,"assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"];
   List lsTxt1 = ["Abdulmajid","Yaser","Mohamed","Omare"];
-  List lsTxt2 = ["Abdulmajid is ready to shipping","Yaser is ready to shipping",
-    "Mohamed is ready to shipping","Omare is ready to shipping"];
+  List lsTxt2 = ["Abdulmajid is ready to ship","Yaser is ready to ship",
+    "Mohamed is ready to ship","Omare is ready to ship"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

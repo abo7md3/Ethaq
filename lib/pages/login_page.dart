@@ -1,10 +1,11 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../repositories/auth_repository.dart';
 import '../widgets/my_flat_button.dart';
 import '../widgets/my_text_field.dart';
-
+import '../pages/forgot.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 class LoginPage extends StatefulWidget {
 
   final AuthRepository _auth = AuthRepository.instance;
@@ -60,19 +61,28 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 32),
-                  child: Align(
-                    alignment: AlignmentDirectional.centerEnd,
+                  margin: EdgeInsets.only(top: 8, ),
+
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: TextButton(
+
+
                     child: Text(
                       "Forgot password?",
                       style: TextStyle(
                         color: Color(0xFF0086EC),
                       ),
                     ),
+                    onPressed: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ForgotPage()));
+                    },
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 48),
+                  margin: EdgeInsets.only(top: 15),
                   child: FractionallySizedBox(
                     widthFactor: 1,
                     child: MyFlatButton(
@@ -102,17 +112,18 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-
+//
   login()  async{
     try {
-      String uid = await widget._auth.login(_email, _password);
+      String uid = await
+       widget._auth.login(_email, _password);
       Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
     } on PlatformException catch (e) {
       showSnackBar("Pleas Tray Again!!");
     }
   }
 
-  signUp() async {
+  signUp()  async {
     try {
       String uid = await widget._auth.signUp(_email, _password);
       debugPrint(uid);

@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/satellite_page.dart';
@@ -44,12 +44,26 @@ class Services extends StatelessWidget {
                         Rect.fromLTWH(0, 0, rect.width, rect.height));
                   },
                   child: Text(
-                    "Services page",
+                    "    Welcome to ETHAQ application!\n\n "
+                        "Here you can request services and \n"
+                        " choose your favorite worker for that\n"
+                        " job among a list of available workers.\n"
+                        " Just select the service you wish and \n"
+                        " select the desired worker for that "
+                        "  service from the list and click\n             “Get Service”.",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 3,
+                        height: 1.2,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      letterSpacing: 2,
                     ),
+                    // style: TextStyle(
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.bold,
+                    //
+                    //   letterSpacing: 2,
+                    // ),
                   ),
                 ),
               )

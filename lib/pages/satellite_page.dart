@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/satellite_page.dart';
@@ -14,10 +14,10 @@ class Satellite extends StatelessWidget {
   ];
   List lsTxt1 = ["Abdulmajid", "Yaser", "Mohamed", "Omare"];
   List lsTxt2 = [
-    "Abdulmajid is ready to satellite",
-    "Yaser is ready to satellite",
-    "Mohamed is ready to satellite",
-    "Omare is ready to satellite"
+    "Abdulmajid is ready to sat",
+    "Yaser is ready to sat",
+    "Mohamed is ready to sat",
+    "Omare is ready to sat"
   ];
 
   @override

@@ -1,4 +1,4 @@
-import 'package:ethaq/pages/home_page.dart';
+import 'package:ethaq1/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../pages/satellite_page.dart';
@@ -44,8 +44,12 @@ class Help extends StatelessWidget {
                         Rect.fromLTWH(0, 0, rect.width, rect.height));
                   },
                   child: Text(
-                    "  If you want help or have  an inquiry,\n  contact us on 92XXXXXXXXX.",
+                    "  If you want help or have an\n"
+                        "  inquiry, Contact us on 920000.\n  "
+                        "Email: Ethaq_Comp@gmail.com",
                     style: TextStyle(
+                      height: 1.2,
+                      fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 3,

@@ -19,7 +19,10 @@ class AuthRepository {
     FirebaseUser user = result.user;
     return user.uid;
   }
+   Future<void> forgotPas(String email) {
+      return _firebaseAuth.sendPasswordResetEmail(email: email);
 
+  }
   Future<void> signOut() {
     return _firebaseAuth.signOut();
   }

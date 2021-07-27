@@ -8,8 +8,8 @@ class Plumber extends StatelessWidget {
   List lsImg = ["assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"
   ,"assets/images/photo5960872552366716087.jpg","assets/images/photo5960872552366716087.jpg"];
   List lsTxt1 = ["Abdulmajid","Yaser","Mohamed","Omare"];
-  List lsTxt2 = ["Abdulmajid is ready to Plumber","Yaser is ready to Plumber",
-    "Mohamed is ready to Plumber","Omare is ready to Plumber"];
+  List lsTxt2 = ["Abdulmajid is ready to Plum","Yaser is ready to Plum",
+    "Mohamed is ready to Plum","Omare is ready to Plum"];
 
   @override
   Widget build(BuildContext context) {
